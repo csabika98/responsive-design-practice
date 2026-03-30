@@ -10,12 +10,8 @@ async function addRandomDog(animalContainer) {
     const response = await fetch("https://dog.ceo/api/breeds/image/random");
     const data = await response.json();
     const image = document.createElement("img");
-
     image.src = data.message;
-    
-
     animalContainer.appendChild(image);
-
 }
 
 main();
