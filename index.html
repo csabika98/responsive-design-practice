@@ -10,12 +10,17 @@
 <body>
     <main class="page">
         <h1>Random Dog Gallery</h1>
-        <button id="add-animal-button" type="button">Add random dog</button>
+
+        <div class="controls">
+            <button id="add-animal-button" type="button">Add random dog</button>
+
+            <form id="animal-quantity-form" class="quantity-form">
+                <input type="number" id="dogs-quantity-input" placeholder="How many?" min="1" max="20">
+                <button type="submit">Add dogs</button>
+            </form>
+        </div>
+
         <section id="dogs-container" class="dogs-container"></section>
     </main>
-    <form id="animal-quantity-form">
-        <input type="number" id="dogs-quantity-input" placeholder="Enter dogs quantity" min="1" max="10">
-        <button type="submit">Add animals</button>
-    </form>
 </body>
 </html>

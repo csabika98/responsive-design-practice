@@ -5,7 +5,7 @@ function main() {
     
     const animalQuantityForm = document.getElementById("animal-quantity-form");
     const animalQuantityInput = document.getElementById("dogs-quantity-input");
-    const maxDogsQuantity = 10;
+    const maxDogsQuantity = 20;
     const minDogsQuantity = 1;
 
     addAnimalButton.addEventListener("click", () => addRandomDog(dogsContainer));
