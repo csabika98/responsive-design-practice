@@ -4,3 +4,15 @@ body {
     background-color: #f4f6fb;
     color: #1f2933;
 }
+
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
