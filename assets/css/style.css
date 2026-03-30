@@ -16,3 +16,10 @@ img {
     width: 300px;
     height: 300px;
 }
+
+.animal-quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
