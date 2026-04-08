@@ -9,7 +9,27 @@
 </head>
 <body>
     <main class="page">
-        <h1>Random Dog Gallery</h1>
+        <header class="page-header">
+            <h1>Random Dog Gallery</h1>
+            <nav class="app-menu" aria-label="Gallery options">
+                <div class="menu-group">
+                    <label for="sort-select" class="menu-label">Sort</label>
+                    <select id="sort-select" class="menu-select">
+                        <option value="newest" selected>Newest first</option>
+                        <option value="oldest">Oldest first</option>
+                        <option value="breed">Breed (A-Z)</option>
+                        <option value="random">Shuffle</option>
+                    </select>
+                </div>
+                <details class="menu-dropdown">
+                    <summary class="menu-dropdown-trigger">More</summary>
+                    <div class="menu-dropdown-panel" role="menu">
+                        <button type="button" id="action-clear" class="menu-item" role="menuitem">Clear gallery</button>
+                        <button type="button" id="action-scroll-top" class="menu-item" role="menuitem">Back to top</button>
+                    </div>
+                </details>
+            </nav>
+        </header>
 
         <div class="controls">
             <button id="add-animal-button" type="button">Add random dog</button>
